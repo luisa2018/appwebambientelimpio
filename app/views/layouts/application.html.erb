@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebAmbienteLimpio</title>
+     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+          <ul class="nav justify-content-end" style="background-color: #befd7f;">
+            <li class="nav-item">
+            <%= link_to 'Inicio', root_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+            <%= link_to 'Login', new_user_session_path, class: 'navbar-brand'%>
+            </li>
+            <li class="nav-item">
+            <% if current_user %>
+            <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'navbar-brand' %>
+            <% else %>
+            <%= link_to 'Ingrese', new_user_registration_path, class: 'navbar-brand' %>
+            <% end %>
+            </li>
+            <li class="nav-item">
+            <%= link_to 'Contactenos', contactenos_index_path, class: 'navbar-brand' %>
+            </li>
+          </ul>
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </body>
+</html>

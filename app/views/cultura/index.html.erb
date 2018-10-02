@@ -1,0 +1,36 @@
+
+<div class="Titlec">
+ <h1 class="Title2"> CULTURA APLICALA CON EL MEDIO AMBIENTE</H1>
+</div>
+<div class="container cultura">
+<%= image_tag('profe.png', :class => 'animated slideInRight profe') %>
+<%= image_tag('hoja1.png', :class => 'hoja1') %>
+<!-- Button trigger modal -->
+<a type="button" class="aprende" data-toggle="modal" data-target="#exampleModalLong">
+  Aprende
+</a>
+</div>
+<script>
+$('#exampleModalLong').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+ </script>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: #defebf;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Importacia del Reciclaje</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        El reciclar o el reciclaje es un acto de suma importancia para la sociedad ya que el mismo supone la reutilización de elementos y objetos de distinto tipo que de otro modo serían desechados, contribuyendo a formar más cantidad de basura y, en última instancia, dañando de manera continua al planeta.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

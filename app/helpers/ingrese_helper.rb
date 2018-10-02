@@ -1,0 +1,2 @@
+module IngreseHelper
+end

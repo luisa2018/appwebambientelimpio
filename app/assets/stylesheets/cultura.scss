@@ -1,0 +1,29 @@
+// Place all the styles related to the cultura controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html,body {
+  margin: 0px;
+  font-family: 'Righteous', cursive;
+}
+
+.Title2 {
+  text-align: center;
+  color:#008000;
+}
+.profe{
+  align-items: center;
+}
+.hoja1{
+  position: absolute;
+  z-index:3;
+  margin-top:100px;
+  margin-left:-500px;
+}
+.aprende {
+  position: absolute;
+  z-index:3;
+  margin-top:150px;
+  margin-left:-450px;
+  font-size:"20";
+  color:black;
+}
