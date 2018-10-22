@@ -1,0 +1,39 @@
+<div class="rf">
+<%= form_with(model: reportar, local: true, html: {multipart: true}) do |form| %>
+  <% if reportar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reportar.errors.count, "error") %> prohibited this reportar from being saved:</h2>
+
+      <ul>
+      <% reportar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ubicacion %>
+    <%= form.text_field :ubicacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :obsrvacion %>
+    <%= form.text_field :obsrvacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imagen %>
+    <%= form.file_field :imagen %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit :Guardar %>
+  </div>
+<% end %>
+</div>

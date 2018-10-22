@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :reportars
+  resources :meetings
+  resources :locations
   devise_for :users
   get 'aliados/index'
   get 'beneficios/index'

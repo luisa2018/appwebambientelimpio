@@ -3,34 +3,51 @@
 <%= image_tag('camina4.png', :class => 'animated slideInRight  caminante2') %>
 <%= image_tag('camina1.png', :class => 'animated slideInRight  caminante') %>
 <%= image_tag('camina2.png', :class => 'animated slideInLeft  caminante1') %>
-<%= image_tag('botella.png', :class => 'animated wobble botella') %>
-<%= image_tag('burbuja.png', :class => 'animated zoomInUp dialogo') %>
-<%= image_tag('burbuja2.png', :class => 'animated zoomInUp dialogo2') %>
+<%= image_tag('botellah.png', :class => 'animated wobble botella') %>
+<div class="animated zoomInUp dialogo">
+<p class="p1">Si no vez una caneca de basura cerca,
+   se responsable lléva tu basura hasta encontrar una.</p>
+</div>
+<div class="animated zoomInUp dialogo2">
+<p class="p2">Aporta a tu localidad, si vez que faltan recurso para conservar limpios los espacios gestiona ante la junta de acción comunal o la empresa encargada del aseo.</p>
+</div>
 <%= image_tag('caneca.png', :class => 'animated zoomInUp caneca') %>
-<%= image_tag('camion3.png', :class => 'animated slideInRight camion1') %>
+
 <!-- Menu de modulos princiaples-->
-<div class="container-fluid" style="background-color: #befd7f;">
-    <div class="">
-       <%= link_to image_tag('culturaf.png', :class => 'cultural'), cultura_index_path %>
-       <%= link_to 'Cultura', cultura_index_path, :class => 'cultura' %>
+<div class="container" style="background-color: #befd7f;">
+    <div class="cultural">
+       <%= link_to image_tag('culturaf.png', :class => 'cultura'), cultura_index_path %>
     </div>
-    <div class="">
-         <%= link_to image_tag('rutaf.png', :class => 'rutal'), ruta_index_path %>
-         <%= link_to 'Rutas', ruta_index_path, :class => 'ruta' %>
+    <div class="cultura1">
+       <%= link_to 'Cultura', cultura_index_path, :class => 'cultura1' %>
     </div>
-    <div class="">
-         <%= link_to image_tag('reportarf.png', :class => 'reportal'), reportar_index_path %>
-         <%= link_to 'Reportar', reportar_index_path, :class => 'reporta' %>
+    <div class="rutal">
+         <%= link_to image_tag('rutaf.png', :class => 'ruta'), ruta_index_path %>
     </div>
-    <div class="">
-         <%= link_to image_tag('beneficiof.png', :class => 'beneficiol'), beneficios_index_path %>
-         <%= link_to 'Beneficios', beneficios_index_path, :class => 'beneficio' %>
+    <div class="ruta1">
+         <%= link_to 'Rutas', locations_path, :class => 'ruta1' %>
     </div>
-    <div class="">
-         <%= link_to image_tag('aliadosf.png', :class => 'aliadosl'), aliados_index_path %>
-         <%= link_to 'Aliados', aliados_index_path, :class => 'aliados' %>
+    <div class="reportal">
+         <%= link_to image_tag('reportarf.png', :class => 'reporta'), reportars_path %>
+    </div>
+    <div class="reporta1">
+         <%= link_to 'Reportar', reportars_path, :class => 'reporta1' %>
+    </div>
+    <div class="beneficiol">
+         <%= link_to image_tag('beneficiof.png', :class => 'beneficio'), beneficios_index_path %>
+    </div>
+    <div class="beneficio1">
+         <%= link_to 'Beneficios', beneficios_index_path, :class => 'beneficio1' %>
+    </div>
+    <div class="aliadosl">
+         <%= link_to image_tag('aliadosf.png', :class => 'aliados'), aliados_index_path %>
+    </div>
+    <div class="aliados1">
+         <%= link_to 'Aliados', aliados_index_path, :class => 'aliados1' %>
     </div>
 </div>
+<%= image_tag('camion3.png', :class => 'animated slideInRight camion1') %>
 <div class="autor">
 <h1>www.ambientelimpio.com</h1>
+
 </div>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<div class="">
+
+</div>
+<h1 class="hisRepor">Historial de Reportes</h1>
+
+<table class="TRB">
+  <thead>
+    <tr class="th1">
+      <th>Fecha</th>
+      <th>Ubicacion</th>
+      <th>Observacion</th>
+      <th>Imagen</th>
+      <th colspan="3">Opciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reportars.each do |reportar| %>
+      <tr>
+        <td><%= reportar.fecha %></td>
+        <td><%= reportar.ubicacion %></td>
+        <td><%= reportar.obsrvacion %></td>
+        <td><%= image_tag(reportar.imagen_url, :width => 70, :height => 75) if reportar.imagen.present? %></td>
+        <td><%= link_to 'Ver', reportar %></td>
+        <td><%= link_to 'Editar', edit_reportar_path(reportar) %></td>
+        <td><%= link_to 'Eliminar', reportar, method: :delete, data: { confirm: 'Esta seguro que desea eliminar el registro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Crear un Reporte', new_reportar_path, class: 'newre' %>

@@ -9,21 +9,306 @@ html,body {
 .Title2 {
   text-align: center;
   color:#008000;
+  margin:10px;
+}
+.Titlec {
+  margin:10px;
+  margin-top:5px;
 }
 .profe{
+  position: absolute;
   align-items: center;
+  margin:0;
+  float: inherit;
+  top:-20px;
+  left:-20px;
+  z-index:-1;
 }
-.hoja1{
+
+.apre {
+  z-index:3;
+  font-size:25px;
+  color:#f98f1d;
+  width:130px;
+  font-weight: bold;
+}
+.prac {
+  z-index:3;
+  font-size:25px;
+  color:#f98f1d;
+  width:130px;
+  font-weight: bold;
+}
+.cal {
+  z-index:3;
+  font-size:25px;
+  color:#f98f1d;
+  width:130px;
+  font-weight: bold;
+}
+.event {
+  z-index:3;
+  font-size:25px;
+  color:#f98f1d;
+  width:130px;
+  font-weight: bold;
+}
+.cont {
+  position:absolute;
+  margin:30px;
+  left:-200px;
+}
+.modal-title {
+  text-align: center;
+  font-size:16px;
+}
+.ImpoRe {
+  text-align: justify;
+}
+
+.ImpoCo {
+  text-align: justify;
+}
+.amarilla {
+  position:absolute;
+  margin:0;
+  float: inherit;
+  top:42px;
+  left:450px;
+}
+.lata {
   position: absolute;
   z-index:3;
-  margin-top:100px;
-  margin-left:-500px;
+  top:150px;
+  left:550px;
+  font-size:14px;
+  width:100px;
+  height:100px;
 }
-.aprende {
+.plastico1 {
   position: absolute;
   z-index:3;
-  margin-top:150px;
-  margin-left:-450px;
-  font-size:"20";
-  color:black;
+  top:150px;
+  left:795px;
+  font-size:14px;
+  width:100px;
+  height:100px;
+}
+.colillas {
+  position: absolute;
+  z-index:3;
+  top:450px;
+  left:380px;
+  font-size:14px;
+  width:110px;
+  height:110px;
+}
+.vidrio2 {
+  position: absolute;
+  z-index:3;
+  top:420px;
+  left:650px;
+  font-size:14px;
+  width:150px;
+  height:150px;
+}
+
+.comida {
+  position: absolute;
+  z-index:3;
+  top:440px;
+  left:930px;
+  font-size:14px;
+  width:150px;
+  height:150px;
+}
+
+.gris {
+  position:absolute;
+  margin:0;
+  float: inherit;
+  top:350px;
+  left:10px;
+}
+.verde {
+  position:absolute;
+  margin:0;
+  float: inherit;
+  top:350px;
+  left:300px;
+}
+.blanca {
+  position: absolute;
+  margin:0;
+  float: inherit;
+  top:350px;
+  left:600px;
+}
+.baige {
+ position: absolute;
+  margin:0;
+  float: inherit;
+  top:350px;
+  left:880px;
+}
+.azul {
+  position: absolute;
+  margin:0;
+  float: inherit;
+  top:42px;
+  left:720px;
+}
+.rojo {
+  position: absolute;
+  margin:0;
+  float: inherit;
+  top:42px;
+  left:150px;
+}
+.jeringa {
+  position: absolute;
+  z-index:3;
+  top:130px;
+  left:200px;
+  font-size:14px;
+  width:150px;
+  height:150px;
+
+}
+.m1 {
+  width:1150px;
+  height:500px;
+  margin-left:-250px;
+  height:780px;
+}
+.b2 {
+  margin-top:590px;
+}
+.modal-title {
+  font-weight: bold;
+  font-size:30px;
+  color:#F2F3F4;
+}
+.peligro{
+  z-index:3;
+  position: absolute;
+  top:82px;
+  left:200px;
+  font-size:14px;
+  color:#36454F;
+  font-weight: bold;
+}
+.metal {
+  z-index:3;
+  position: absolute;
+  top:82px;
+  left:500px;
+  font-size:14px;
+  color:#36454F;
+  font-weight: bold;
+}
+.plastico {
+  z-index:3;
+  position: absolute;
+  top:82px;
+  left:778px;
+  font-size:14px;
+  color:#36454F;
+  font-weight: bold;
+}
+
+.papel {
+  z-index:3;
+  position: absolute;
+  top:392px;
+  left:59px;
+  font-size:12px;
+  color:#36454F;
+  font-weight: bold;
+}
+.papel1 {
+  z-index:3;
+  position: absolute;
+  top:480px;
+  left:100px;
+  font-size:12px;
+  color:#36454F;
+  font-weight: bold;
+  width:100px;
+  height:100px;
+}
+.ordinarios {
+  z-index:3;
+  position: absolute;
+  top:392px;
+  left:350px;
+  font-size:14px;
+  color:#36454F;
+  font-weight: bold;
+}
+.vidrio {
+  z-index:3;
+  position: absolute;
+  top:392px;
+  left:660px;
+  font-size:14px;
+  color:#36454F;
+  font-weight: bold;
+}
+.organicos {
+  z-index:3;
+  position: absolute;
+  top:392px;
+  left:935px;
+  font-size:14px;
+  color:#36454F;
+  font-weight: bold;
+}
+.dropdown {
+  margin-left:1000px;
+}
+.tabla {
+  margin-left:1000px;
+  margin-top:50px;
+}
+
+.c1 {
+  width:50px;
+}
+.tabla1 {
+  text-align: center;
+}
+
+.titlec {
+  margin-left:1000px;
+}
+.cc {
+  margin-left:1000px;
+}
+.calculadora {
+  display:block;
+  margin:0 auto;
+  padding:20px;
+  background-color:#DC4C46;
+  width:250px;
+  height:300px;
+  border-radius:25px;
+}
+
+.calculadora td input {
+  display: block;
+  width:70px;
+  height:50px;
+  font-size:18px;
+}
+#resultado {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom:50px;
+  line-height:50px;
+  width:200px;
+  background-color: #fff;
+  color:#DC4C46;
+
 }

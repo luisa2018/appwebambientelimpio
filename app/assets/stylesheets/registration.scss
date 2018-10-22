@@ -1,3 +1,55 @@
 // Place all the styles related to the registration controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.Titler {
+  text-align: center;
+}
+
+.nombre {
+  margin-left:500px;
+}
+.apellidos {
+  margin-left:500px;
+}
+.cedula {
+  margin-left:500px;
+}
+.direccion {
+  margin-left:500px;
+}
+
+.localidad {
+  position: absolute;
+  margin-left:750px;
+  top:154px;
+}
+.email {
+  position: absolute;
+  margin-left:750px;
+  top:215px;
+}
+
+.password {
+  position: absolute;
+  margin-left:750px;
+  top:274px;
+}
+
+.comfir {
+  position: absolute;
+  margin-left:750px;
+  top:339px;
+}
+
+.enviar {
+ position:absolute;
+ margin-top:50px;
+ margin-left:680px;
+
+}
+.link {
+  position:absolute;
+  margin-top:90px;
+  margin-left:680px;
+}

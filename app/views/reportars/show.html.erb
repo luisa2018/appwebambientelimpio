@@ -1,0 +1,26 @@
+<div class="formnew">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @reportar.fecha %>
+</p>
+
+<p>
+  <strong>Ubicacion:</strong>
+  <%= @reportar.ubicacion %>
+</p>
+
+<p>
+  <strong>Obsrvacion:</strong>
+  <%= @reportar.obsrvacion %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= image_tag(@reportar.imagen_url, :width => 170, :height => 190) if @reportar.imagen.present? %>
+</p>
+
+<%= link_to 'Editar', edit_reportar_path(@reportar) %> |
+<%= link_to 'Regresar', reportars_path %>
+</div>

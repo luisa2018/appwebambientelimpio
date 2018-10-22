@@ -1,32 +1,51 @@
 
-<div class="Titlec">
- <h1 class="Title2"> CULTURA APLICALA CON EL MEDIO AMBIENTE</H1>
-</div>
-<div class="container cultura">
 <%= image_tag('profe.png', :class => 'animated slideInRight profe') %>
-<%= image_tag('hoja1.png', :class => 'hoja1') %>
-<!-- Button trigger modal -->
-<a type="button" class="aprende" data-toggle="modal" data-target="#exampleModalLong">
-  Aprende
-</a>
+<ul class="nav flex-column cont">
+  <li class="nav-item">
+    <a class="nav-link active apre aprende" href="#" data-toggle="modal" data-target="#exampleModalLong">Aprende</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link prac" href="#" data-toggle="modal" data-target="#exampleModalLong1">Practica</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link event" href="#">Eventos</a>
+  </li>
+</ul>
+<div class="contenedor">
+  <h6 class="titlec"> CALCULA, RECUPERA Y AYUDA AL PLANETA</h6>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    RESIDUOS
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a id="mostrar ItemPlastico" href="javascript:mostrar();">Plastico</a></li>
+    <li><a id="ItemPapel" href="#">Papel</a></li>
+    <li><a id="ItemVidrio" href="#">Vidrio</a></li>
+    <li><a id="ItemCarton" href="#">Carton</a></li>
+    <li><a id="ItemAlumino" href="#">Aluminio</a></li>
+  </ul>
 </div>
-<script>
-$('#exampleModalLong').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
- </script>
-<!-- Modal -->
+</div>
+
+<!-- Modal 1-->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content" style="background-color: #defebf;">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Importacia del Reciclaje</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">IMPORTANCIA DEL RECICLAJE</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        El reciclar o el reciclaje es un acto de suma importancia para la sociedad ya que el mismo supone la reutilización de elementos y objetos de distinto tipo que de otro modo serían desechados, contribuyendo a formar más cantidad de basura y, en última instancia, dañando de manera continua al planeta.
+       <p class="ImpoRe">El reciclar o el reciclaje es un acto de suma importancia para la sociedad ya que el mismo supone la reutilización de elementos y objetos de distinto tipo que de otro modo serían desechados, contribuyendo a formar más cantidad de basura y, en última instancia, dañando de manera continua al planeta. </p>
+       <p class="ImpoCo"> La cadena de reciclado consta de varias etapas:</p>
+       <p class="ImpoCo">•	Recuperación o recogida: que puede ser realizada por empresas públicas o privadas. Consiste únicamente en la recolección y transporte de los residuos hacia el siguiente eslabón de la cadena. Se utilizan contenedores urbanos de recogida selectiva (contenedores amarillo, verde, azul, gris y marrón).</p>
+       <p class="ImpoCo">•	Plantas de transferencia: se trata de un eslabón y obligatorio que no siempre se usa. Aquí se mezclan los residuos para realizar transportes mayores a menor costo (usando contenedores más grandes o compactadores más potentes).</p>
+       <p class="ImpoCo">•	Plantas de clasificación (o separación): donde se clasifican los residuos y se separan los valorizables. Residuos que sí pueden reciclarse de los que no. La fracción que no puede reciclarse se lleva a aprovechamiento energético o a vertederos.</p>
+       <p class="ImpoCo">•	Reciclador final (o planta de valoración): donde finalmente los residuos se reciclan (papeleras, plastiqueros, etc.), se almacenan (vertederos) o se usan para producción de energía (cementeras, biogás, etc.).</p>
+      </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -34,3 +53,109 @@ $('#exampleModalLong').on('shown.bs.modal', function () {
     </div>
   </div>
 </div>
+<!-- Modal 2-->
+<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content m1" style="background-color:transparent;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">TIPOS DE CONTENEDORES</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="peligro">Residuos Peligrosos</p>
+        <%= image_tag('roja.png', :class => 'animated slideInRight rojo') %>
+        <%= image_tag('jeringa.png', :class => 'animated slideInRight jeringa') %>
+        <p class="metal">Residuos Metalicos</p>
+        <%= image_tag('amarilla.png', :class => 'animated slideInRight amarilla') %>
+        <%= image_tag('lata1.png', :class => 'animated slideInRight lata') %>
+        <p class="plastico">Residuos Plasticos</p>
+        <%= image_tag('azul.png', :class => 'animated slideInRight azul') %>
+        <%= image_tag('botella1.png', :class => 'animated slideInRight plastico1') %>
+        <p class="papel">Residuos Papel y Carton</p>
+        <%= image_tag('gris.png', :class => 'animated slideInRight gris') %>
+        <%= image_tag('carton.png', :class => 'animated fadeInUpBig papel1') %>
+        <p class="ordinarios">Residuos Ordinarios</p>
+        <%= image_tag('verde.png', :class => 'animated slideInRight verde') %>
+        <%= image_tag('ciga.png', :class => 'animated slideInRight colillas') %>
+        <p class="vidrio">Residuos Vidrios</p>
+        <%= image_tag('blanca.png', :class => 'animated slideInRight blanca') %>
+        <%= image_tag('vidrio2.png', :class => 'animated slideInRight vidrio2') %>
+        <p class="organicos">Residuos Organicos</p>
+        <%= image_tag('baige.png', :class => 'animated slideInRight baige') %>
+        <%= image_tag('comida.png', :class => 'animated slideInRight comida') %>
+      </div>
+      <div class="modal-footer b2">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script language="Javascript">
+	function mostrar() {
+		var unaTabla, mostrar;
+		unaTabla = document.getElementById("unaTabla");
+		if(unaTabla.style.visibility == "hidden") {
+			unaTabla.style.visibility = "visible";
+			mostrar = document.getElementById("mostrar").childNodes[0];
+			mostrar.data = "Ocultar";
+		}
+		else {
+			unaTabla.style.visibility = "hidden";
+			mostrar = document.getElementById("mostrar").childNodes[0];
+			mostrar.data = "Mostrar";
+		}
+
+	}
+
+</script>
+<script type="text/javascript">
+  // varibles operadoras
+  var operandoa = 180;
+  var operandob = 230;
+  var operacion;
+  // variables de entrada
+  var resultado = document.getElementById("resultado");
+  var ciento80 = document.getElementById('ciento80');
+  var ciento60 = document.getElementById('ciento60');
+  var ciento40 = document.getElementById('ciento40');
+  var ciento20 = document.getElementById('ciento20');
+  var cien = document.getElementById('cien');
+  var ochenta = document.getElementById('ochenta');
+  var sesenta = document.getElementById('sesenta');
+  var cuarenta = document.getElementById('cuarenta');
+  var veinte = document.getElementById('veinte');
+
+  function operaciones()
+  {
+   return (parseInt(operandoa) * parseInt(operandob));
+  }
+
+
+
+
+</script>
+<div class="tabla">
+<table  id="unaTabla" style="visibility: hidden;" class="tabla1 calculadora">
+   <tr>
+     <td colspan="3"><input type="text" name="resultado" id="resultado"></td>
+   </tr>
+   <tr>
+     <td> <input type="button" id="ciento80" value="180k" onclick="operaciones();"></td>
+     <td> <input type="button" id="ciento60" value="160k"></td>
+     <td> <input type="button" id="ciento40" value="140k"></td>
+   </tr>
+   <tr>
+     <td> <input type="button" id="ciento20" value="120k"></td>
+     <td> <input type="button" id="cien" value="100k"></td>
+     <td> <input type="button" id="ochenta" value="80k"></td>
+   </tr>
+   <tr>
+     <td> <input type="button" id="sesenta" value="60k"></td>
+     <td> <input type="button" id="cuarenta" value="40k"></td>
+     <td> <input type="button" id="veinte" value="20k"></td>
+   </tr>
+</table>
+</div>
+<%= image_tag('carritoC.png', :class => 'animated slideInRight cc') %>

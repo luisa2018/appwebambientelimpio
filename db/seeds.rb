@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Event.destroy_all
+Event.create!(title:"Evento de ayer", start: Time.now - 1.day)
+Event.create!(title:"Evento de hoy", start: Time.now)
+Event.create!(title:"Evento de mañana", start: Time.now + 1.day)
